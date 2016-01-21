@@ -35,6 +35,7 @@ static int save_return_addr(struct stackframe *frame, void *d)
 	}
 }
 
+/*
 void *return_address(unsigned int level)
 {
 	struct return_address_data data;
@@ -55,6 +56,7 @@ void *return_address(unsigned int level)
 	else
 		return NULL;
 }
+*/
 
 #else /* if defined(CONFIG_FRAME_POINTER) && !defined(CONFIG_ARM_UNWIND) */
 
